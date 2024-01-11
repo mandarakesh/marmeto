@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.mainHeading{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.discount{
+    color: red;
+}
+
+.tab {
+    background-color: rgb(30, 35, 38);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: rgb(142, 135, 135);
+    color: #ffffff;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productCard {
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.productInfo {
+    margin-top: 10px;
+}
+
+.productInfo h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.productInfo p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.addToCart {
+    background-color: #181b19;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+.compare{
+    text-decoration: line-through;
+}
+.addToCart:hover {
+    background-color: rgb(142, 135, 135) ;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        margin-bottom: 10px;
+    }
+
+    .productContainer {
+        justify-content: center;
+    }
+
+    .productCard {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .productCard {
+        width: 45%;
+    }
+}
