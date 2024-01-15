@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Product Cards</title>
 </head>
+
 <body>
     <div class="mainHeading">SELECT YOUR CHOICE</div>
     <div class="tabs">
-        <button class="tab" onclick="changeCategory('Men')">Men</button>
-        <button class="tab" onclick="changeCategory('Women')">Women</button>
-        <button class="tab" onclick="changeCategory('Kids')">Kids</button>
+        <button class="tab" onclick="changeCategory('Men')">
+            <div class="imagediv"><img src="https://cdn0.iconfinder.com/data/icons/people-avatars-9/24/people_avatar_head_tony_stark_marvel_iron_man-512.png" class="menimage" />Men
+            </div>
+        </button>
+        <button class="tab" onclick="changeCategory('Women')">
+
+            <div class="imagediv"><img src="https://i.pinimg.com/originals/5e/b3/42/5eb3428f012a89b19b623b6291e54928.png" class="womenimage" />Women
+            </div>
+        </button>
+        <button class="tab" onclick="changeCategory('Kids')">
+            <div class="imagediv"><img src="https://static.thenounproject.com/png/3112749-200.png" class="menimage" />Kids</div>
+        </button>
     </div>
 
     <div class="productContainer" id="productContainer">
-        
+
     </div>
 
     <script src="rakesh.js"></script>
 </body>
+
 </html>
