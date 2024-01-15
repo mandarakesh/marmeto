@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -8,18 +15,40 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.menimage {
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.womenimage {
+    height: 20px;
+    width: 40px;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.imagediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tabs {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.mainHeading{
+.mainHeading {
     text-align: center;
     padding: 20px;
     font-weight: bold;
+    font-size: 40px;
 }
-.discount{
+
+.discount {
     color: red;
 }
 
@@ -85,11 +114,13 @@ body {
     transition: background-color 0.3s ease;
     width: 100%;
 }
-.compare{
+
+.compare {
     text-decoration: line-through;
 }
+
 .addToCart:hover {
-    background-color: rgb(142, 135, 135) ;
+    background-color: rgb(142, 135, 135);
 }
 
 /* Responsiveness */
@@ -110,10 +141,18 @@ body {
     .productCard {
         width: 100%;
     }
+
+    .mainHeading {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .productCard {
         width: 45%;
+    }
+
+    .mainHeading {
+        font-size: 25px;
     }
 }
